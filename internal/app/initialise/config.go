@@ -134,6 +134,7 @@ func initConfigFile(path string) error {
 		pterm.Warning.Println("Failed to install headless chrome, login via username/password disabled.")
 	}
 	pterm.Info.Println("Logging in to canvas...")
+	pterm.Info.Println("Meow")
 	pw, err := playwright.Run()
 	if err != nil {
 		return err
